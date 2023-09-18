@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faf8ed;
+}
+#content {
+  margin: auto;
+  width: 300px;
+}
+#top-login {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+#logo {
+  width: 60px;
+  margin-right: 15px;
+}
+.input-login {
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #0000002c;
+  font-size: 1.1rem;
+}
+.input-login:focus {
+  outline: none;
+}
+#input-email {
+  border-radius: 5px 5px 0px 0px;
+}
+#input-senha {
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+}
+#area-checkbox {
+  margin: 15px 0;
+}
+
+input[type="button"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #137dc5;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px #0f67a3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 300px;
+  height: 45px;
+  border: none;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+input[type="button"]:active {
+  transform: translate(0px, 3px);
+  box-shadow: 0px 0px 0px 0px #137dc5, inset 0px 3px 3px #0f67a3;
+}
