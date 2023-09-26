@@ -14,19 +14,33 @@ body {
 }
 #content {
   margin: auto;
-  width: 300px;
 }
 #top-login {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
+}
+#top-login div {
+  display: flex;
+  align-items: center;
 }
 #logo {
   width: 60px;
   margin-right: 15px;
 }
-.input-login {
+#area-login-cadastro {
+  display: flex;
+}
+
+#login {
   width: 300px;
+}
+#cadastros {
+  width: 300px;
+}
+.input-padrao {
+  width: 100%;
   height: 50px;
   padding-left: 10px;
   border: 1px solid #0000002c;
@@ -35,10 +49,10 @@ body {
 .input-login:focus {
   outline: none;
 }
-#input-email {
+#input-email-login {
   border-radius: 5px 5px 0px 0px;
 }
-#input-senha {
+#input-senha-login {
   border-top: none;
   border-radius: 0px 0px 5px 5px;
 }
@@ -46,7 +60,7 @@ body {
   margin: 15px 0;
 }
 
-input[type="button"] {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,13 +71,53 @@ input[type="button"] {
   box-shadow: 0px 5px #0f67a3;
   cursor: pointer;
   transition: all 0.2s ease;
-  width: 300px;
-  height: 45px;
   border: none;
   font-size: 1.4rem;
-  margin-bottom: 20px;
 }
-input[type="button"]:active {
+.btn:active {
   transform: translate(0px, 3px);
   box-shadow: 0px 0px 0px 0px #137dc5, inset 0px 3px 3px #0f67a3;
+}
+.btn-form {
+  width: 300px;
+  height: 45px;
+}
+.btn-voltar {
+  width: 55px;
+  height: 45px;
+}
+.linha-vertical {
+  width: 1px;
+  border: 1px solid #0000002c;
+  margin: 0px 20px;
+}
+#grupo-input-menor {
+  display: flex;
+  flex-wrap: wrap;
+}
+.input-pequeno {
+  width: 150px;
+  margin: 0;
+}
+#nome-cadastro {
+  border-radius: 5px 0px 0px 0px;
+}
+#sobrenome-cadastro {
+  border-radius: 0px 5px 0px 0px;
+}
+#matricula-cadastro {
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 20px;
+}
+.borda-top {
+  border-top: none;
+}
+#genero-cadastro {
+  border-right: none;
+}
+#nome-cadastro {
+  border-right: none;
+}
+option {
+  height: 40px;
 }
