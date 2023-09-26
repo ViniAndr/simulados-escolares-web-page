@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  width: 900px;
+  margin: auto;
+  background-color: #faf8ed;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-padrao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #137dc5;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px #0f67a3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 15px 5px;
+}
+.btn-padrao:active {
+  transform: translate(0px, 3px);
+  box-shadow: 0px 0px 0px 0px #137dc5, inset 0px 3px 3px #0f67a3;
+}
+.btn-voltar {
+  padding-bottom: 5px;
+}
+.text {
+  margin: 10px;
+}
+.questao {
+  margin: 10px;
+  font-weight: bold;
+}
+hr {
+  margin-bottom: 10px;
+  border-color: #00000013;
+}
+.radio-inputs {
+  margin: 15px 0px;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  font-size: 14px;
+}
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 10px;
+  color: rgba(51, 65, 85, 1);
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
