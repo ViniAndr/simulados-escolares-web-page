@@ -35,18 +35,6 @@ body {
 }
 /* Fim da config da logo */
 /* Área da navegação */
-#area-navegacao ul {
-  display: flex;
-  align-items: center; /*Foi necessario*/
-}
-#area-navegacao ul li {
-  margin-left: 10px;
-}
-.link-navegacao {
-  color: black;
-  font-size: 1.2rem;
-  padding: 5px;
-}
 .btn-padrao {
   display: flex;
   justify-content: center;
