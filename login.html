@@ -23,34 +23,35 @@
       </div>
 
       <div id="area-login-cadastro">
-        <form id="login">
-          <input id="input-email-login" class="input-padrao" type="text" placeholder="Endereço de email" />
-          <input id="input-senha-login" class="input-padrao" type="password" placeholder="Senha" />
+        <form action="simulado.html" id="login">
+          <input id="input-email-login" class="input-padrao" type="text" placeholder="Endereço de email" required />
+          <input id="input-senha-login" class="input-padrao" type="password" placeholder="Senha" required />
           <div id="area-checkbox">
             <input type="checkbox" name="" id="" />
             <span>Lembre de mim</span>
           </div>
-          <a href="simulado.html">
-            <div class="btn btn-form">Entrar</div>
-          </a>
+          <input class="btn btn-form" type="submit" value="Entrar" />
         </form>
 
         <div class="linha-vertical"></div>
 
-        <form id="cadastros">
+        <form action="cadastroFeito.html" id="cadastros">
           <div id="grupo-input-menor">
-            <input id="nome-cadastro" class="input-padrao input-pequeno" type="text" placeholder="Nome" />
-            <input id="sobrenome-cadastro" class="input-padrao input-pequeno" type="text" placeholder="Sobrenome" />
+            <input id="nome-cadastro" class="input-padrao input-pequeno" type="text" placeholder="Nome" required />
+            <input id="sobrenome-cadastro" class="input-padrao input-pequeno" type="text" placeholder="Sobrenome" required />
             <select id="genero-cadastro" class="input-padrao input-pequeno borda-top" required>
-              <option value="">Teste</option>
+              <option value="">Genero</option>
+              <option value="M">Masculino</option>
+              <option value="F">Femenino</option>
+              <option value="o">Outros</option>
             </select>
-            <input id="data-cadastro" class="input-padrao input-pequeno borda-top" type="date" />
+            <input id="data-cadastro" class="input-padrao input-pequeno borda-top" type="date" required />
           </div>
-          <input id="email-cadastro" class="input-padrao borda-top" type="text" placeholder="Endereço de e mail" />
-          <input id="telefone-cadastro" class="input-padrao borda-top" type="text" placeholder="Telefone" />
-          <input id="faculdade-cadastro" class="input-padrao borda-top" type="text" placeholder="Faculdade" />
-          <input id="matricula-cadastro" class="input-padrao borda-top" type="text" placeholder="Matricula" />
-          <input class="btn btn-form" type="button" value="Cadastrar-se" />
+          <input id="email-cadastro" class="input-padrao borda-top" type="text" placeholder="Endereço de e mail" required />
+          <input id="telefone-cadastro" class="input-padrao borda-top" type="text" placeholder="Telefone" required />
+          <input id="faculdade-cadastro" class="input-padrao borda-top" type="text" placeholder="Faculdade" required />
+          <input id="matricula-cadastro" class="input-padrao borda-top" type="text" placeholder="Matricula" required />
+          <input class="btn btn-form" type="submit" value="Cadastrar-se" />
         </form>
       </div>
     </div>
